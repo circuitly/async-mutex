@@ -1,5 +1,8 @@
 {
-  "name": "async-mutex",
+  "name": "@circuitly/async-mutex",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.4.0",
   "description": "A mutex for guarding async workflows",
   "scripts": {
@@ -49,9 +52,7 @@
     "async"
   ],
   "files": [
-    "lib",
-    "es6",
-    "index.mjs"
+    "lib"
   ],
   "devDependencies": {
     "@sinonjs/fake-timers": "^9.1.2",
@@ -72,16 +73,7 @@
     "typescript": "^4.8.2"
   },
   "main": "lib/index.js",
-  "module": "es6/index.js",
-  "types": "lib/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "require": "./lib/index.js",
-      "default": "./lib/index.js"
-    },
-    "./package.json": "./package.json"
-  },
+  "types": "lib/index.d.ts",  
   "dependencies": {
     "tslib": "^2.4.0"
   }
